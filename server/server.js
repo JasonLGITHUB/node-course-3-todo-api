@@ -8,7 +8,7 @@ var {User} = require('./models/user');
 
 var app =express();
 
-app.use(bodyParser.json()); //middleware fuction send JSOn to App
+app.use(bodyParser.json()); //middleware function send JSOn to App
 
 app.post('/todos', (req, res) => {
 
@@ -28,6 +28,8 @@ app.listen (3000, () => {
   console.log('Started on port 3000');
 
 });
+
+module.exports = {app};
 
 // var User = mongoose.model('User', {
 //
