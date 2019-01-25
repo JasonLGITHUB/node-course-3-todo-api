@@ -36,13 +36,13 @@ MongoClient.connect(url,{ useNewUrlParser: true }, (err, client) => {
   // });
 
   db.collection('Users2').findOneAndUpdate({
-     _id: new ObjectID('5c3530fe5736b528581b0764')
+     _id: new ObjectID('5c4a8c4940663c285bf401a0')
    }, {
      $set: {
-       Name: 'Andrew'
+       Name: 'Andrew & Jason'
      },
      $inc: {
-       age: 1
+       Age: 1
      }
    }, {
      returnOriginal: false
