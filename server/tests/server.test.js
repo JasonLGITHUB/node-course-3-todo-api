@@ -9,7 +9,7 @@ beforeEach((done) => {
 });
 
 describe('POST /todos', () => {
-  it('should create a new todo', (done) => {
+  it('should create a new todo', (done) => {   //test
     var text = 'Test todo text';
 
     request(app)
@@ -17,7 +17,7 @@ describe('POST /todos', () => {
       .send({text})
       .expect(200)
       .expect((res) => {
-        expect(res.body.text).toBe(text + '1');
+        expect(res.body.text).toBe(text);
       })
       .end((err, res) => {
         if (err) {
@@ -42,7 +42,7 @@ describe('POST /todos', () => {
           return done(err);
         }
 
-        Todo.find().then((todos) => {
+        Todo.find().then((todos) => { //find every tod in collection
           expect(todos.length).toBe(0);
           done();
         }).catch((e) => done(e));
