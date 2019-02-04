@@ -1,4 +1,5 @@
 //const MongoClient = require('mongodb').MongoClient;
+//identical to above
 const {MongoClient, ObjectID} = require('mongodb');
 
 
@@ -27,6 +28,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true
 //       console.log(JSON.stringify(result.ops, undefined, 2));
 
 db.collection('Users2').insertOne({
+
   Name: 'Jason Liang',
   Age: 59,
   Location: 'HB'
