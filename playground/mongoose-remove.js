@@ -10,7 +10,7 @@ Todo.remove({}).then((result) => {
   console.log (result)
 } );
 
-//Todo.findOneRemove()
+//Todo.findOneAndRemove()
 //Todo.findByIdAndRemove()
 
 Todo.findOneRemove({_id:'5c58acea07e203c4d675bded'}).then((Todo) => {
