@@ -1,5 +1,5 @@
 {
-  "name": "todo-api",
+  "name": "node-todo-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,13 +14,13 @@
     "express": "^4.16.0",
     "loadash": "^1.0.0",
     "lodash": "^4.17.11",
-    "mongoose": "^5.4.3",
+    "mongoose": "^5.4.9",
     "validator": "^10.11.0"
   },
   "devDependencies": {
-    "expect": "^23.6.0",
+    "expect": "^24.1.0",
     "mocha": "^3.3.0",
     "nodemon": "^1.18.9",
-    "supertest": "^3.3.0"
+    "supertest": "^3.4.2"
   }
 }
